@@ -1,0 +1,46 @@
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir\nodeserver> docker build -t exam .
+[+] Building 5.8s (9/9) FINISHED
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 156B                                                                               0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/node:16-slim                                                    0.6s
+ => [1/4] FROM docker.io/library/node:16-slim@sha256:25a81a735e584066d97e01df43d825a026dde33d6ca5ab6ff3718141da92  0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 619B                                                                                  0.0s
+ => CACHED [2/4] WORKDIR /usr/node/app                                                                             0.0s
+ => [3/4] COPY  package.json .                                                                                     0.0s
+ => [4/4] RUN npm install                                                                                          5.0s
+ => exporting to image                                                                                             0.1s
+ => => exporting layers                                                                                            0.1s
+ => => writing image sha256:d2b1fc3a9002dc4239859c63e2566bbc291e6b74d83eb2b344fd0ec95e14b091                       0.0s
+ => => naming to docker.io/library/exam
+Docker run -p 80:3070 exam
+------------------------------
+ git init
+Reinitialized existing Git repository in C:/university/ASE/Delaram/ASE/ASE/Delaram-Ghadir/nodeserver/.git/
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir\nodeserver> git add *
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir\nodeserver> git commit -m "first"
+[master 9926ad2] first
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir\nodeserver> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Delaram2022/nodeserver.git
+   7eb5f22..9926ad2  master -> master
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir\nodeserver>
+-----------------------------
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir> git clone https://github.com/Delaram2022/nodeserver.git
+Cloning into 'nodeserver'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 2), reused 7 (delta 1), pack-reused 0
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (2/2), done.
+PS C:\university\ASE\Delaram\ASE\ASE\Delaram-Ghadir>
